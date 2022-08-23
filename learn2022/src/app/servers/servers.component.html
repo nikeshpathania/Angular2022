@@ -1,7 +1,9 @@
 <button 
   [disabled] = '!allowserver'
   (click) = 'onServerCreated()'>Add Server</button>
+
+  <input type="text" (input)="onUpdateServerName($event)"/>
 <!-- <p [innerText] = 'allowserver'></p> -->
-<p>{{serverCreatedStatus}}</p>
+<p>{{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server>
