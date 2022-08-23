@@ -1,4 +1,7 @@
-<button [disabled] = !allowserver>Add Server</button>
-<p [innerText] = 'allowserver'></p>
+<button 
+  [disabled] = '!allowserver'
+  (click) = 'onServerCreated()'>Add Server</button>
+<!-- <p [innerText] = 'allowserver'></p> -->
+<p>{{serverCreatedStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
