@@ -3,6 +3,9 @@
   (click) = 'onServerCreated()'>Add Server</button>
 
   <input type="text" (input)="onUpdateServerName($event)"/>
+  <input 
+    type="text" 
+    [(ngModel)]="serverName"/>
 <!-- <p [innerText] = 'allowserver'></p> -->
 <p>{{serverName}}</p>
 <app-server></app-server>
